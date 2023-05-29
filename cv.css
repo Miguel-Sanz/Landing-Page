@@ -1,0 +1,102 @@
+/* Reset de estilos básicos */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo general */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo del encabezado */
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilo de las secciones */
+  section {
+    margin-bottom: 40px;
+  }
+  /* Estilo de los proyectos */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .project:hover img {
+    transform: scale(1.05);
+  }
+  
+  .project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .project:hover .project-info {
+    opacity: 1;
+  }
+  
+  /* Estilo del pie de página */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Estilos de animación y parallax */
+  .about {
+    animation: fade-in 1s;
+  }
+  
+  .skills {
+    animation: fade-in 2s;
+  }
+  
+  .experience {
+    animation: fade-in 1s;
+  }
+  
+  .education {
+    animation: fade-in 1s;
+  }
+  
+  .footer {
+    animation: slide-up 1s;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slide-up {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
